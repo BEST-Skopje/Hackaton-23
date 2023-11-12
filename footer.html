@@ -25,17 +25,28 @@
             max-height: 30px;
             max-width: 30px;
         }
+        .list-inline {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .list-inline-item {
+            margin: 0 10px; /* Adjust the margin as needed for spacing */
+            text-align: center;
+        }
+
         </style>
     </head>
     <body>
-        <footer style="color: #fbfbfb;" class="text-dark">
+        <footer style="color: #fbfbfb;" class="text-dark mt-2">
             <div class="container">
                 <div class="row" id="firstrow">
                     <!-- logo -->
                     <div class="col-lg-3 col-md-6">
-                        <a href="https://best.org.mk/en/home3/">
+                        <a href="https://best.org.mk/en/home3/" class="me-2">
                             <!-- png od logoto -->
-                            <img src="images/logos/BEST-Skopje_FullColor.png" class="img-fluid">
+                            <img src="images/logos/BEST-Skopje_FullColor.png" class="img-fluid s">
                         </a>
                     </div>
                     <!-- lokacija i buttons (da se najdat sliki za da ne se local?) -->
@@ -58,7 +69,7 @@
                                         </a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="">
+                                        <a href="mailto:skopje@best.org.mk">
                                             <img src="images/footer/email.png" height="25" alt="Instagram">
                                         </a>
                                     </li>
@@ -78,19 +89,18 @@
                                         </a>
                                     </li>
                                 </ul>
-                                
                             </div>
                             <div class="col-md-6">
                                 <ul class="list-inline">
                                     <li class="list-inline-item text-center px-2">
                                         <strong>Габриела Гаврилова</strong>
                                         <p class="mb-1">Главен организатор</p>
-                                        <p class="mb-1">Email: gabriela.gavrilova@best-eu.org;</p>
+                                        <p class="mb-1">Email: gabriela.gavrilova@best-eu.org</p>
                                     </li>
                                     <li class="list-inline-item text-center">
                                         <strong>Камелија Матеска</strong>
                                         <p class="mb-1">Одговорна за натпреварувачи</p>
-                                        <p class="mb-1">Email: kamelija.mateska@best-eu.org;</p>
+                                        <p class="mb-1">Email: kamelija.mateska@best-eu.org</p>
                                     </li>
                                 </ul>
                             </div>
