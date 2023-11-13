@@ -8,20 +8,22 @@
         <script src="jquery/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
         <script>
-            $(function () {
-                $("#header").load("header.html", function () {
-                 var path = window.location.pathname;
-                    var page = path.split("/").pop().split(".html")[0];
-                    if(page==="")
-                        page = "index";
-                    $("#" + page).addClass("active");
-                });
-                $("#footer").load("footer.html");
-                
-                // Handle accordion click event to close when opened
-                $('.accordion-button').on('click', function() {
-                    var parent = $(this).closest('.accordion-item');
-                    var isCollapsed = parent.find('.accordion-collapse').hasClass('show');
+      $(function() {
+        $("#header").load("header.html", function() {
+          var path = window.location.pathname;
+          var page = path
+            .split("/")
+            .pop()
+            .split(".html")[0];
+          if (page === "") page = "index";
+          $("#" + page).addClass("active");
+        });
+        $("#footer").load("footer.html");}) 
+
+        // Handle accordion click event to close when opened
+        /* $(".accordion-button").on("click", function() {
+          var parent = $(this).closest(".accordion-item");
+          var isCollapsed = parent.find(".accordion-collapse").hasClass("show");
 
                     // If the clicked item is already open, close it
                     if (isCollapsed) {
@@ -32,7 +34,7 @@
                         parent.addClass('active');
                     }
                 });
-            });
+            });*/
         </script>
         <style>
             body {
