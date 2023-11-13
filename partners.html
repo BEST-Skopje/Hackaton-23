@@ -12,39 +12,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css">
         <!-- ======== StyleSheet ======= -->
         <link rel="stylesheet" href="css/styles.css">
-        <script src="jquery/jquery.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script>
-            $(function () {
-                $("#header").load("header.html", function () {
-                 var path = window.location.pathname;
-                    var page = path.split("/").pop().split(".html")[0];
-                    if(page==="")
-                        page = "index";
-                    $("#" + page).addClass("active");
-                });
-                $("#footer").load("footer.html");
-                
-                // Handle accordion click event to close when opened
-                $('.accordion-button').on('click', function() {
-                    var parent = $(this).closest('.accordion-item');
-                    var isCollapsed = parent.find('.accordion-collapse').hasClass('show');
 
-                    // If the clicked item is already open, close it
-                    if (isCollapsed) {
-                        parent.removeClass('active');
-                    } else {
-                        // Close other items and open the clicked one
-                        $('.accordion-item').removeClass('active');
-                        parent.addClass('active');
-                    }
-                });
-            });
-        </script>
         <title>Партнери</title>
     </head>
     <body>
-        <div id="header"></div>
+   
         <!-- Preloader -->
         <div class="loader">
             <img src="images\logos\Preloader.png" alt="">
@@ -64,11 +36,11 @@
                         <div class="title">
                             <h1>Официјален Партнер</h1>
                         </div>
-                        <p class="image-description">Text for Image 1</p>
-                        <a href="#" class="btn">Know more</a>
+                        <p class="image-description">IT Labs</p>
+                        <a href="https://www.it-labs.com" class="btn">Know more</a>
                     </div>
                     <div class="main-partner-image">
-                        <img src="images/image_2.png" alt="Description of Image 1" class="main-partner-img">
+                        <img src="images/logos/Logo IT Labs R -02 2.png" alt="Description of Image 1" class="main-partner-img">
                     </div>
                 </div>
             </section>
