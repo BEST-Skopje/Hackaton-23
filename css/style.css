@@ -1,0 +1,173 @@
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.row{
+    width: 100%;
+    margin: 0;
+}
+
+.main_hook {
+    width: 100%;
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 0;
+    font-family: 'Press Start 2P', cursive;
+    color: #53C9E7;
+    padding-top: 2vw;
+}
+
+.countdown-container {
+    height: 35.833vw;
+    width: 60.458vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/prozorcheto-02.svg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+i {
+    color: #F14472;
+}
+
+span {
+    font-size: 3.7vw;
+    color: #F14472;
+}
+
+.unit {
+    font-size: 1.4vw;
+    color: #53C9E7;
+}
+
+span + span {
+    margin-top: -0.25vw;
+}
+
+span + .unit {
+    margin-top: -0.25vw;
+}
+
+button {
+    margin-top: 1.5vw;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.8vw;
+    background-color: #53C9E7;
+    color: #000000;
+    border: none;
+    padding: 0.9vw 1.7vw;
+    cursor: pointer;
+    margin-bottom: 2.5vw;
+}
+
+button:hover {
+    background-color: #F14472;
+}
+
+#quote {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -2.7vw; 
+    font-size: 2vw;
+    font-family: "Crimson Text", serif;
+}
+
+#quote::before,
+#quote::after {
+    content: "";
+    position: absolute;
+    height: 0.1vw; 
+    width: 100%; 
+}
+
+#quote::before {
+    top: 0; 
+    background: linear-gradient(to right, rgba(83, 201, 231, 1), rgba(83, 201, 231, 0)); 
+}
+
+#quote::after {
+    bottom: 0; 
+    background: linear-gradient(to left, rgba(83, 201, 231, 1), rgba(83, 201, 231, 0)); 
+}
+
+#quote p {
+    width: 60vw;
+    text-align: center; 
+    position: relative; 
+    z-index: 1;
+    margin-top: 1.7vw;
+}
+
+#partneri{
+    margin-bottom: 2vw;
+    margin-top: -1.5vw;
+}
+
+
+
+#hakaton {
+    font-size: 5vw;
+    margin-bottom: 1.5vw;
+    color: #000000;
+    padding-top: 0.9vw;
+}
+
+#cactus {
+    height: 17vw;
+    margin-left: 5vw;
+}
+
+#first {
+    background-image:url(../images/poaz6.svg);
+}
+
+#prijavi-se {
+    display: block;
+    width: 100%;
+}
+
+#black_dino {
+    width: 25vw; 
+    display: inline-block;
+    align-self: center;
+    margin-top: 1.5vw; 
+    margin-left: 35vw; 
+}
+
+#ptero1 {
+    margin-top: 8vw; 
+    margin-left: 0vw; 
+    margin-right: 0vw; 
+    max-height: 12vw;
+    width: auto;
+    display: inline-block;
+    padding: 0;
+}
+
+.ptero {
+    max-height: 12vw;
+    width: auto;
+    display: inline-block;
+}
