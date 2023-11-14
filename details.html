@@ -1,60 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script src="jquery/jquery.js"></script>
         <link rel="icon" type="image/png" href="images/logos/Hackathon_Gray.png">
         <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
         <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <title>Хакатон 2023</title>
-        <style>
-    body {
-      font-family: 'Press Start 2P', cursive;
-    }
-    #quote1 {
-      padding-left: 5px;
-      text-indent: 0.5em;
-      border-left: 5px solid #F14472;
-      font-size: 15px;
-    }
-    blockquote span::before {
-      content: open-quote;
-    }
-    blockquote span::after {
-      content: close-quote;
-    }
-    #quote2{
-      padding-right: 5px;
-      text-indent: 0.5em;
-      border-right: 5px solid #F14472;
-      font-size: 15px;
-      margin: 12px;
-    }
-    .cloud-img {
-      width: 100px;
-      position: absolute;
-      top: 25px;
-      left: 30%;
-      transform: translateX(-50%);
-      font-weight: bolder;
-    }
-        </style>
         <script src="jquery/jquery.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
         <script>
-            $(function () {
-                $("#header").load("header.html", function () {
-                 var path = window.location.pathname;
-                    var page = path.split("/").pop().split(".html")[0];
-                    if(page==="")
-                        page = "index";
-                    $("#" + page).addClass("active");
-                });
-                $("#footer").load("footer.html");
-                
-                // Handle accordion click event to close when opened
+
+            $(document).ready(function() {
+
+                $(function () {
+                    $("#header").load("header.html", function () {
+                        var path = window.location.pathname;
+                        var page = path.split("/").pop().split(".html")[0];
+                           if(page==="")
+                               page = "index";
+                           $("#" + page).addClass("active");
+                       });
+                    $("#footer").load("footer.html");
+
+            })
+
+        // Handle accordion click event to close when opened
                 $('.accordion-button').on('click', function() {
                     var parent = $(this).closest('.accordion-item');
                     var isCollapsed = parent.find('.accordion-collapse').hasClass('show');
@@ -70,6 +41,37 @@
                 });
             });
         </script>
+        <style>
+    #quote1 {
+      padding-left: 5px;
+      text-indent: 0.5em;
+      border-left: 5px solid #F14472;
+      font-size: 15px;
+      font-family: 'Press Start 2P', cursive;
+    }
+    blockquote span::before {
+      content: open-quote;
+    }
+    blockquote span::after {
+      content: close-quote;
+    }
+    #quote2{
+      padding-right: 5px;
+      text-indent: 0.5em;
+      border-right: 5px solid #F14472;
+      font-size: 15px;
+      margin: 12px;
+      font-family: 'Press Start 2P', cursive;
+    }
+    .cloud-img {
+      width: 100px;
+      position: absolute;
+      top: 25px;
+      left: 30%;
+      transform: translateX(-50%);
+      font-weight: bolder;
+    }
+        </style>
     </head>
     <body>
         <div id="header"></div>
@@ -80,21 +82,20 @@
                         <h1 class="ml11 d-flex justify-content-center mt-5 text-center" style="color: #F14472;">
                             <span class="text-wrapper">
                                 <span class="line line1"></span>
-                                <span class="letters">Што e ХАКАТОН?</span>
+                                <span class="letters" style="font-family: 'Press Start 2P', cursive;">Што e ХАКАТОН?</span>
                             </span>
                         </h1>
-                        <img src="images/index/Cloud.svg" class="cloud-img">
-                        <img src="images/index/Cloud.svg" class="cloud-img" style="top: 60px; left: 5%;">
+                        <img src="images/index/Cloud.svg" class="cloud-img" style="top: 150px; left: 30%;">
                         <img src="images/index/Cloud.svg" class="cloud-img" style="top: 220px; left: 1%;">
                         <img src="images/index/Cloud.svg" class="cloud-img" style="top: 250px; left: 44%;">
                     </div>
                     <div id="first-left-down" class="mt-5">
-                        <h3 class="d-flex justify-content-center font-italic text-center" style="font-size: 20px;">Инженерство oд А до Х</h3>
+                        <h3 class="d-flex justify-content-center font-italic text-center" style="font-size: 20px; font-family: 'Press Start 2P', cursive;">Инженерство oд А до Х</h3>
                     </div>
                 </div>
-                <div id="container-first-right" class="col-md-6 col-12 py-auto" style="font-size: 10px; background-color: #283238; color: #F6EEEB;">
+                <div id="container-first-right" class="col-md-6 col-12 py-auto" style="font-size: 12px;line-height:28px; background-color: #283238; color: #F6EEEB;">
                     <div class="px-5 py-5" style="margin-top: 30px;">
-                        <p style="text-align: justify;">
+                        <p style="text-align: justify; font-family: 'Press Start 2P', cursive;">
                             Хакатон 2023 е настан организиран од БЕСТ Скопје во партнерство со компанијата IT Labs. На овој возбудлив, 24-часовен натпревар,
           решавајќи актуелни програмерски проблеми можеш да ги развиеш твоите инженерски вештини, тимска рабоа,
           критичко, креативно и логичко размислување. Да се стекнеш со бесценето практично искуство работејќи на реален проблем.
@@ -104,15 +105,15 @@
                 </div>
             </div>
             <div id="about-container-second" class="row py-0" style="min-height: 19rem;">
-                <div id="container-second-left" class="col-md-6 col-12 py-auto" style="background-color: #283238; font-size: 10px; color: #F6EEEB;">
-                    <div class="title px-5" style="margin-top: 5%; font-size: 10px; color: #53C9E7">
-                        <h1> Innovative design</h1>
+                <div id="container-second-left" class="col-md-6 col-12 py-auto" style="background-color: #283238; font-size: 12px; color: #F6EEEB;">
+                    <div class="title px-5" style="margin-top: 5%; font-size: 10px; color: #53C9E7; font-family: 'Press Start 2P', cursive;">
+                        <h1> Web Development</h1>
                     </div>
                     <div class="text px-5 py-5">
-                        <p style="text-align: justify;">
-                            Во оваа категорија целта е за одреден проблем да се измисли некое ново, оригинално решение или пак да се надогради постоечко.
-          Преку Innovative Design, младите инженери учат како да смислуваат нови концепти и да создаваат нови дизајни.
-          Освен презентацијата, прават и прототип на дизајнот, заради демонстрација на придобивките од нивното решение за зададениот проблем.
+                        <p style="text-align: justify; line-height:28px; font-family: 'Press Start 2P', cursive;">
+                            Web development е процесот на развивање вебсајт, апликација или софтвер. 
+                            Вклучува одредување на потребите на корисникот и создавање привлечен интерфејс, како и градење функционалности. 
+                            Студентите ќе решаваат задача поврзана со оваа област.
                         </p>
                     </div>
                 </div>
@@ -162,21 +163,20 @@
                         </blockquote>
                     </div>
                 </div>
-                <div id="container-third-right" class="col-md-6 col-12 py-auto" style="background-color: #283238; font-size: 10px; color: #F6EEEB;">
-                    <div class="title px-5" style="margin-top: 5%; color: #53C9E7;">
-                        <h1> Case Study</h1>
+                <div id="container-third-right" class="col-md-6 col-12 py-auto" style="background-color: #283238; font-size: 12px; color: #F6EEEB;">
+                    <div class="title px-5" style="margin-top: 5%; color: #53C9E7; font-family: 'Press Start 2P', cursive;">
+                        <h1> Team Work</h1>
                     </div>
                     <div class="text px-5 my-5">
-                        <p style="text-align: justify;">
-                            Од друга страна, во Case Study категоријата акцентот е ставен на теоретското решавање на реален инженерски проблем.
-          Решението треба да е изводливо и да е поткрепено со теоретски факти. Категоријата е наменета за
-          учесниците да научат да ги спојат постоечките информации
-          и материјали дадени од партнер компанијата, за да стигнат до оптималното решение.
+                        <p style="text-align: justify; font-family: 'Press Start 2P', cursive; line-height:28px;">
+                            Студентите ќе се натпреваруваат во тимови. Тимската работа е од суштинско значење бидејќи одржува 
+                            пријатна работна средина. За време на хакатонот, тимовите ќе имаат прилика заедно да даваат идеи и 
+                            да дојдат до решение, притоа заедно да си го поминат денот на еден забавен начин.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="footer" classstyle="background-color: white; position: relative;"></div>
+        <footer id="footer"></footer>
     </body>
 </html>

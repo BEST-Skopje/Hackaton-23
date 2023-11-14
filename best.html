@@ -17,31 +17,13 @@
                     $("#" + page).addClass("active");
                 });
                 $("#footer").load("footer.html");
-                
-                // Handle accordion click event to close when opened
-                $('.accordion-button').on('click', function() {
-                    var parent = $(this).closest('.accordion-item');
-                    var isCollapsed = parent.find('.accordion-collapse').hasClass('show');
-
-                    // If the clicked item is already open, close it
-                    if (isCollapsed) {
-                        parent.removeClass('active');
-                    } else {
-                        // Close other items and open the clicked one
-                        $('.accordion-item').removeClass('active');
-                        parent.addClass('active');
-                    }
-                });
             });
         </script>
         <meta charset="utf-8">
         <title>Хакатон 2023</title>
-
-
     </head>
     <body class="main">
         <div id="header" class="mb-2"></div>
-
         <div class="container">
             <div class="content">
             
@@ -88,8 +70,6 @@
             <!-- <img id="cactus" src="images/Black_cactus.svg">
             <img id="black_dino" src="images/black_dino.svg"> -->
         </div>
-
         <div id="footer"></div>
-
     </body>
 </html>
