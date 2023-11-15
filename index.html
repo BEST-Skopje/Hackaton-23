@@ -24,56 +24,64 @@
             });
         </script>
     </head>
-    <body>
+    <body class="bg-light">
         <div id="header" class="mb-3" ></div>
-        <div id="first">
-            <p class="main_hook">Дали сте спремни за</p>
-            <h1 id="hakaton" class="main_hook">Хакатон 2023</h1>
-            <div class="row">
-                <img class="ptero" src="images/Ptero.svg">
-                <div class="countdown-container">
-                    <div class="countdown">
-                        <div class="countdown-item">
-                            <span id="days"></span>
-                            <span class="unit">Денови</span>
-                        </div>
-                        <div class="countdown-item">
-                            <span>:</span>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="hours"></span>
-                            <span class="unit">Часови</span>
-                        </div>
-                        <div class="countdown-item">
-                            <span>:</span>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="minutes"></span>
-                            <span class="unit">Минути</span>
-                        </div>
-                        <div class="countdown-item">
-                            <span>:</span>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="seconds"></span>
-                            <span class="unit">Секунди</span>
-                        </div>
-                    </div>
-                    <a href="https://docs.google.com/forms/d/1bKAhCEpd-IW2TmRsI7lUZYR-5htpMix7QMcRQ7sfNoY/edit" target="_blank">
-                        <button id="prijavi_se">Пријави се!</button>
-                    </a>
-                    <script src="js/script.js"></script>
+        <div class="container-fluid" id="first">
+            <p class="main_hook text-center">Дали сте спремни за</p>
+            <h1 id="hakaton" class="main_hook text-center">Хакатон 2023</h1>
+    
+            <div class="row text-center align-items-center">
+                <div class="col-lg-2">
+                    <img class="ptero img-fluid" src="images/Ptero.svg">
                 </div>
-                <img id="ptero1" class="ptero" src="images/Ptero.svg">
+                <div class="col-lg-8">
+                    <div class="countdown-container">
+                        <div class="countdown ">
+                            <div class="countdown-item">
+                                <span id="days"></span>
+                                <span class="unit fs-1.4">Денови</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span>:</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="hours"></span>
+                                <span class="unit fs-1.4">Часови</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span>:</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="minutes"></span>
+                                <span class="unit fs-1.4">Минути</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span>:</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="seconds"></span>
+                                <span class="unit fs-1.4">Секунди</span>
+                            </div>
+                        </div>
+                        <a href="https://docs.google.com/forms/d/1bKAhCEpd-IW2TmRsI7lUZYR-5htpMix7QMcRQ7sfNoY/edit" target="_blank">
+                            <button id="prijavi_se">Пријави се!</button>
+                        </a>
+                        <script src="js/script.js"></script>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <img id="ptero1 img-fluid" class="ptero" src="images/Ptero.svg">
+                </div>
             </div>
-            <div id="quote">
-                <p>
-                    "Every great developer you know got 
-            there by solving problems they were 
-            unqualified to solve until they actually 
-            did it." - <i>Patrick McKenzie</i></p>
+    
+            <div id="quote" class="text-center">
+                <p>"Every great developer you know got there by solving problems they were unqualified to solve until they actually did it." - <i>Patrick McKenzie</i></p>
             </div>
+    
+            <img id="cactus" class="img-fluid" src="images/Black_cactus.svg">
+            <img id="black_dino" class="img-fluid" src="images/black_dino.svg">
         </div>
+    
         <div class="container-fluid shadow rounded-lg mt-5">
             <div class="mx-lg-5 mx-md-3 pt-3 mx-sm-1 text-center">
                 <p class="main_hook" id="partneri">Партнери</p>
@@ -81,20 +89,15 @@
             </div>
             <div class="row mx-lg-5 mx-md-3 mx-sm-1">
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-3 mx-auto">
-                    <div class="card m-auto text-center bg-light border h-100 shadow-lg rounded1_3" style="max-width: 25rem;">
-                        <img
-                            class="card-img-top img-fluid rounded mx-auto mt-4"
-                            src="images/logos/Logo IT Labs R -02 2.png"
-                            style="width: 90%;"
-                            alt=""
-                        >
+                    <div class="card m-auto text-center bg-light border h-100 shadow-lg rounded1_3" style="max-width: 15rem;">
+                        <img class="card-img-top img-fluid rounded mx-auto mt-4" src="images/logos/Logo IT Labs R -02 2.png" style="width: 90%;" alt="">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title text-center mt-auto mb-0">IT Labs</h5>
-                            <p class="card-text mt-0 mb-0">
+                            <p class="card-text mt-0 mb-2">
                                 Официјален партнер за Хакатон 2023
                             </p>
                             <a href="https://www.it-labs.com/" target="_blank">
-                                <button>Веб страна</button>
+                                <button id="prijavi_se">Веб страна</button>
                             </a>
                         </div>
                     </div>

@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .main {
     margin: auto;
 }
@@ -22,4 +26,26 @@
     color: white;
     background-color: #212526;
     border: 0.7vw solid #f14472;
+
+}
+
+#pozadina{
+    padding-bottom: 1vw;
+    background-image: url(../images/background-img.svg);
+}
+
+#dino{
+    height: 15vw;
+    float: right;
+    margin-bottom: 3vw;
+    margin-left: 3vw;
+    margin-top: 3vw;
+}
+
+#best{
+    height: 9vw;
+    float: right;
+    margin-bottom: 3vw;
+    margin-left: 4vw;
+    margin-top: 3vw;
 }
