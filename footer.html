@@ -22,9 +22,11 @@
             border-bottom: 2px  solid #fbfbfb;
         }
         .logo {
-            max-height: 30px;
-            max-width: 30px;
-        }
+            max-height: 100px; /* Adjust the height as needed */
+            max-width: 100%; /* Adjust the width to maintain aspect ratio */
+            margin-top: 10px; /* Adjust the top margin as needed */
+}
+
         .list-inline {
             display: flex;
             flex-wrap: wrap;
@@ -43,12 +45,14 @@
             <div class="container">
                 <div class="row" id="firstrow">
                     <!-- logo -->
-                    <div class="col-lg-3 col-md-6">
+                    <!-- logo -->
+                    <div class="col-lg-3 col-md-6 d-flex align-items-center">
                         <a href="https://best.org.mk/en/home3/" class="me-2">
-                            <!-- png od logoto -->
-                            <img src="images/logos/BEST-Skopje_FullColor.png" class="img-fluid s">
+                        <!-- png od logoto -->
+                        <img src="images/logos/BEST-Skopje_FullColor.png" class="img-fluid logo">
                         </a>
                     </div>
+
                     <!-- lokacija i buttons (da se najdat sliki za da ne se local?) -->
                     <div class="col-lg-9 col-md-6" id="info">
                         <div class="row">

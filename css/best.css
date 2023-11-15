@@ -32,6 +32,7 @@ body{
 #pozadina{
     padding-bottom: 1vw;
     background-image: url(../images/background-img.svg);
+    margin-top: -1vw;
 }
 
 #dino{
