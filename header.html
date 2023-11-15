@@ -23,12 +23,21 @@
             var page = path.split("/").pop().split(".html")[0];
             if(page==="")
                 page = "index";    
-            $("#jazik").attr("href", page + "-en.html")
+            $("#jazik").attr("href", page + "-en.html");
+
+            // Add the following lines
+            var navbarHeight = $(".navbar").outerHeight();
+            $("body").css("padding-top", navbarHeight + "px");
+
+            $(window).on("resize", function() {
+                navbarHeight = $(".navbar").outerHeight();
+                $("body").css("padding-top", navbarHeight + "px");
+            });
         });
         </script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <div class="py-3 px-5">
                     <a class="navbar-brand align-top mt-2" href="/index.html">
