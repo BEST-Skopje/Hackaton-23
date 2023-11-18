@@ -12,7 +12,7 @@
         >
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="jquery/jquery.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
         <script>
         $(function() {
             $("button.navbar-toggler").click(function(){
@@ -48,25 +48,36 @@
                             data-bs-target="collapse"
                         >
                     </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-3 text-center">
                             <a class="nav-link " href="/index.html">Почетна</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="/partners.html">Партнери</a>
+                        <li class="nav-item mx-3 text-center">
+                            <a class="nav-link  " href="/partners.html">Партнери</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-3 text-center">
                             <a class="nav-link " href="/details.html">За Хакатонот</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-3 text-center">
                             <a class="nav-link " href="/team.html">Организатори</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-3 text-center">
                             <a class="nav-link " href="/best.html">БЕСТ</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-3 text-center">
                             <a class="nav-link" href="/faq.html">FAQ</a>
                         </li>
                     </ul>
@@ -75,17 +86,6 @@
                     <a href="https://docs.google.com/forms/d/1bKAhCEpd-IW2TmRsI7lUZYR-5htpMix7QMcRQ7sfNoY/edit" target="_blank">
                         <button class="btn btn-outline-warning" type="button">Пријави се</button>
                     </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                 </div>
                 <div class="py-3 px-5">
                     <a class="navbar-brand align-top" href="https://best.org.mk" target="_blank">
