@@ -387,11 +387,12 @@ body {
   color: #333; /* Text color */
 }
 
-.btn-p {
+.btn-iv {
   padding: 10px 20px;
   border: none;
   outline: none;
-  color: black;
+  color: white;
+  text-decoration: none;
   background-image: linear-gradient(to right, #f04b36, #faa63f);
   text-transform: uppercase;
   font-weight: bold;
@@ -400,7 +401,7 @@ body {
   transition: transform 0.2s ease-in-out;
 }
 
-.btn:hover {
+.btn-iv:hover {
   transform: scale(1.05);
 }
 
@@ -417,4 +418,10 @@ body {
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+
+#pozadina {
+  padding-bottom: 1vw;
+  background-image: url(../images/background-img.svg);
+  margin-top: -1vw;
 }
