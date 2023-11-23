@@ -263,6 +263,30 @@ video {
   overflow: hidden;
 }
 
+@media (max-width: 567px) {
+  .partners-message {
+    position: relative;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+  }
+
+  .partners-message h1 {
+    font-size: 3rem;
+    margin: 0;
+    background: -webkit-linear-gradient(to right, #303841, #303841);
+    background: linear-gradient(to right, #303841, #303841);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
 .partners-message .background-image {
   position: absolute;
   left: 0;
@@ -288,6 +312,19 @@ video {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+
+@media (max-width: 567px) {
+  .partners-message h1 {
+    font-size: 20vw;
+    margin: 0;
+    background: -webkit-linear-gradient(to right, #303841, #303841);
+    background: linear-gradient(to right, #303841, #303841);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 .main-partner-container {
