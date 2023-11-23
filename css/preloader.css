@@ -1,0 +1,52 @@
+/* =========== Preloader ============ */
+
+:root {
+  /* Color Variables */
+  --primary: #ffc400;
+  --text-1: #0f2341;
+  --text-2: #a9a9a9;
+  --white: #fff;
+  --shadow-300: 0 5px 5px rgba(0, 0, 0, 0.3);
+  --shadow-500: 0 5px 5px rgba(0, 0, 0, 0.5);
+  --transition-300: all 300ms ease-in-out;
+  --transition-500: all 500ms ease-in-out;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* font-size: 62.5%; */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: var(--white);
+  color: var(--text-1);
+}
+
+
+.loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  background-color: var(--white);
+}
+
+.loader img {
+  width: 34rem;
+  height: 20rem;
+}

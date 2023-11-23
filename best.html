@@ -8,7 +8,12 @@
         <script src="jquery/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-
+        <!-- Preloader Styles -->
+        <link rel="stylesheet" href="css/preloader.css">
+        <!-- ======== Boxicons ======= -->
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+        <!-- ======== Slider Js ======= -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css">
         <script>
             $(function () {
                 $("#header").load("header.html", function () {
@@ -26,6 +31,9 @@
     </head>
     <body class="main">
         <div id="header" class="mb-2"></div>
+        <div class="loader">
+            <img src="images\logos\Preloader.png" alt="">
+        </div>
         <div id="pozadina">
             <div class="container">
                 <div class="content">
@@ -87,6 +95,14 @@
             <img id="black_dino" src="images/black_dino.svg"> -->
             </div>
         </div>
+        <!-- ======== SwiperJS ======= -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+        <!-- ======== SCROLL REVEAL ======= -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+        <!-- ======== SliderJS ======= -->
+        <script src="js/slider.js"></script>
+        <!-- ======== IndexJS ======= -->
+        <script src="js/index.js"></script>
         <div id="footer"></div>
     </body>
 </html>

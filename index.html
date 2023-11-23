@@ -11,7 +11,20 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
     />
+    <link rel="stylesheet" href="css/preloader.css">
     <title>Хакатон 2023</title>
+
+        <!-- ======== Boxicons ======= -->
+        <link
+        href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+        rel="stylesheet"
+      />
+      <!-- ======== Slider Js ======= -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
+      />  
+
     <script src="jquery/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script>
@@ -27,8 +40,11 @@
     </script>
   </head>
   <body>
-    <div id="header"></div>
+    <div id="header"></div>  
     <div class="container-fluid pt-3" id="first">
+      <div class="loader">
+        <img src="images\logos\Preloader.png" alt="" />
+      </div>  
       <p class="main_hook text-center">Дали сте спремни за</p>
       <h1 id="hakaton" class="main_hook text-center">Хакатон 2023</h1>
 
@@ -135,6 +151,16 @@
       </div>
     </div>
     <!-- do tuka -->
+
+          <!-- ======== SwiperJS ======= -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+          <!-- ======== SCROLL REVEAL ======= -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+          <!-- ======== SliderJS ======= -->
+          <script src="js/slider.js"></script>
+          <!-- ======== IndexJS ======= -->
+          <script src="js/index.js"></script>
+
     <div id="footer"></div>
     <script src="js/script.js"></script>
   </body>
