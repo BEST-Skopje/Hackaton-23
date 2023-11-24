@@ -31,20 +31,6 @@
 
             })
 
-        // Handle accordion click event to close when opened
-                $('.accordion-button').on('click', function() {
-                    var parent = $(this).closest('.accordion-item');
-                    var isCollapsed = parent.find('.accordion-collapse').hasClass('show');
-
-                    // If the clicked item is already open, close it
-                    if (isCollapsed) {
-                        parent.removeClass('active');
-                    } else {
-                        // Close other items and open the clicked one
-                        $('.accordion-item').removeClass('active');
-                        parent.addClass('active');
-                    }
-                });
             });
         </script>
         <style>
