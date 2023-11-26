@@ -19,20 +19,16 @@
         padding-top: 1vw; 
       }
       .logo {
-        max-height: 100px; /* Adjust the height as needed */
-        max-width: 100%; /* Adjust the width to maintain aspect ratio */
         margin-top: 1vw; /* Adjust the top margin as needed */
       }
 
+
+      
       .list-inline {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-      }
-
-      .list-inline-item {
-        text-align: center;
       }
         </style>
     </head>
@@ -109,73 +105,83 @@
                 </div>
             </div>
             <!-- Desktop Footer -->
-            <div class="container d-none d-lg-flex">
-                <div class="row" id="firstrow">
-                    <!-- logo -->
-                    <div class="col-lg-3 col-md-6 d-flex align-items-center">
-                        <a href="https://best.org.mk/en/home3/" target="_blank" class="me-2">
-                            <!-- png od logoto -->
-                            <img src="images/logos/BEST-Skopje_FullColor.png" class="img-fluid logo">
+            <div class="container-flex d-none d-lg-flex mt-3 mx-auto" id="firstrow">
+                <div class="row mx-auto">
+                    <!-- Logo -->
+                    <div class="col-3 text-center justify-content-end align-items-end">
+                        <a class="mx-auto" href="https://best.org.mk/en/home3" target="_blank">
+                            <img src="images/logos/BEST-Skopje_FullColor.png" style="width: 15vw;" class="img-fluid logo">
                         </a>
                     </div>
-                    <!-- lokacija i buttons (da se najdat sliki za da ne se local?) -->
-                    <div class="col-lg-9 col-md-6" id="info">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <a href="https://maps.app.goo.gl/WyphbDPhPHEj1W6N6" target="_blank" class="text-dark text-decoration-none">
-                                    <p>
-                                        Борд на Европски Студенти по Технологија - Скопје,
-                                        <br>
-                                        Барака 5, Факултет за Електроника и Информациски Технологии,
-                                        <br>
-                                        Руѓер Бошковиќ 66, Карпош 2, 1000 Скопје, Македонија
-                                    </p>
-                                </a>
-                                <ul class="list-inline">
-                                    <li class="list-inline-item mx-auto">
-                                        <a href="https://best.org.mk" target="_blank">
-                                            <img src="images/footer/world-wide-web.png" height="25" alt="Instagram">
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item mx-auto">
-                                        <a href="mailto:skopje@best.org.mk">
-                                            <img src="images/footer/email.png" height="25" alt="Instagram">
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item mx-auto">
-                                        <a href="https://www.facebook.com/bestskopje" target="_blank">
-                                            <img src="images/footer/facebook.png" height="25" alt="Facebook">
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item mx-auto">
-                                        <a href="https://www.instagram.com/bestskopje/" target="_blank">
-                                            <img src="images/footer/instagram.png" height="25" alt="Instagram">
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item mx-auto">
-                                        <a href="https://www.linkedin.com/company/best-skopje/" target="_blank">
-                                            <img src="images/footer/linkedin.png" height="25" alt="Instagram">
-                                        </a>
-                                    </li>
-                                </ul>
+                    <!-- Location and Social Media -->
+                    <div class="col-3 my-auto text-start">
+                        <!-- Location -->
+                        <div class="row mx-auto">
+                            <a href="https://maps.app.goo.gl/WyphbDPhPHEj1W6N6" target="_blank" class="text-dark text-decoration-none">
+                                <p>
+                                    Борд на Европски Студенти по Технологија - Скопје,
+                                    <br>
+                                    Барака 5, Факултет за Електроника и Информациски Технологии,
+                                    <br>
+                                    Руѓер Бошковиќ 66, Карпош 2, 1000 Скопје, Македонија
+                                </p>
+                            </a>
+                        </div>
+                        <!-- Social Media -->
+                        <div class="row mx-auto">
+                            <ul class="list-inline mx-auto">
+                                <li class="list-inline-item mx-auto">
+                                    <a target="_blank" href="https://best.org.mk">
+                                        <img src="images/footer/world-wide-web.png" height="25" alt="Website">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-auto">
+                                    <a target="_blank" href="mailto:skopje@best.org.mk">
+                                        <img src="images/footer/email.png" height="25" alt="Email">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-auto">
+                                    <a target="_blank" href="https://www.facebook.com/bestskopje">
+                                        <img src="images/footer/facebook.png" height="25" alt="Facebook">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-auto">
+                                    <a target="_blank" href="https://www.instagram.com/bestskopje/">
+                                        <img src="images/footer/instagram.png" height="25" alt="Instagram">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-auto">
+                                    <a target="_blank" href="https://www.linkedin.com/company/best-skopje/">
+                                        <img src="images/footer/linkedin.png" height="25" alt="LinkedIn">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Gabi & Kamelija -->
+                    <div class="col-6 m-auto">
+                        <div class="row fs-5">
+                            <div class="col-6 text-center mx-auto">
+                                <h4>Габриела Гаврилова</h4>
+                                <p class="mb-1">Главен организатор</p>
+                                <p>
+                                    Email:
+                                    <br>
+                                    gabriela.gavrilova@best-eu.org
+                                </p>
                             </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-12 text-center mb-3">
-                                        <strong>Габриела Гаврилова</strong>
-                                        <p class="mb-1">Главен организатор</p>
-                                        <p class="mb-1">Email: gabriela.gavrilova@best-eu.org</p>
-                                    </div>
-                                    <div class="col-md-12 text-center">
-                                        <strong>Камелија Матеска</strong>
-                                        <p class="mb-1">Одговорна за натпреварувачи</p>
-                                        <p class="mb-1">Email: kamelija.mateska@best-eu.org</p>
-                                    </div>
-                                </div>
+                            <div class="col-6 text-center  mx-auto">
+                                <h4>Камелија Матеска</h4>
+                                <p class="mb-1">Одговорна за натпреварувачи</p>
+                                <p>
+                                    Email:
+                                    <br>
+                                    kamelija.mateska@best-eu.org
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="text-center" id="copyright">
+                    <div class=" row text-center align-items-center justify-content-center" id="copyright">
                         © Designed by IT Team BEST Skopje 2023 - All rights reserved
                     </div>
                 </div>
