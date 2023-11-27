@@ -2,11 +2,42 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Gallery</title>
+        <title>Хакатон 2023</title>
+        <link rel="icon" type="image/png" href="images/logos/Hackathon_White.png">
         <!-- CSS -->
         <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/preloader.css">
+        <script src="jquery/jquery.js"></script>
+        <!-- Preloader Styles -->
+        <link rel="stylesheet" href="css/preloader.css">
+        <!-- ======== Boxicons ======= -->
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+        <!-- ======== Slider Js ======= -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css">
+        <script>
+
+            $(document).ready(function() {
+
+                $(function () {
+                    $("#header").load("header.html", function () {
+                        var path = window.location.pathname;
+                        var page = path.split("/").pop().split(".html")[0];
+                           if(page==="")
+                               page = "index";
+                           $("#" + page).addClass("active");
+                       });
+                    $("#footer").load("footer.html");
+
+            })
+
+            });
+        </script>
     </head>
     <body>
+        <div id="header"></div>
+        <div class="loader">
+            <img src="images\logos\Preloader.png" alt="">
+        </div>
         <div id="gallery" class="gallery-section">
             <h1>Gallery from the Event</h1>
             <p>
@@ -78,7 +109,17 @@
                     </div>
                 </div>
             </div>
+            <div id="footer"></div>
             <!--SCRIPT FOR POP-UP-->
             <script src="js/gallery.js"></script>
+            <!-- Preloader Scripts -->
+            <!-- ======== SwiperJS ======= -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+            <!-- ======== SCROLL REVEAL ======= -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+            <!-- ======== SliderJS ======= -->
+            <script src="js/slider.js"></script>
+            <!-- ======== IndexJS ======= -->
+            <script src="js/index.js"></script>
         </body>
     </html>
