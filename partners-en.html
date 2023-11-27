@@ -1,0 +1,95 @@
+Certainly! Here is the translated code from Macedonian to English:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script src="jquery/jquery.js"></script>
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css" />
+  <script src="js/bootstrap.js"></script>
+  <script>
+    $(function () {
+      $("#header").load("header.html", function () {
+        var path = window.location.pathname;
+        var page = path.split("/").pop().split(".html")[0];
+        if (page === "") page = "index";
+        $("#" + page).addClass("active");
+      });
+      $("#footer").load("footer.html");
+    });
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ======== Favicon ======= -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <!-- ======== Boxicons ======= -->
+  <link
+    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <!-- ======== Slider Js ======= -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
+  />
+  <!-- ======== StyleSheet ======= -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Hackathon 2023</title>
+</head>
+<body>
+  <div id="header"></div>
+
+  <div id="background">
+    <!-- Preloader -->
+    <div class="loader">
+      <img src="images\logos\Preloader.png" alt="" />
+    </div>
+    <!-- Header -->
+    <!-- Partners Full-Screen Message -->
+    <section class="partners-message">
+      <div class="container">
+        <h1>Partners</h1>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container main-partner-container">
+        <div class="main-partner-content">
+          <div class="title">
+            <h1>Official Partner</h1>
+          </div>
+          <p class="image-description p-p">IT Labs</p>
+          <a href="https://www.it-labs.com" class="btn-iv" target="_blank"
+            >Know more</a
+          >
+        </div>
+        <div class="main-partner-image">
+          <img
+            src="images/logos/Logo IT Labs R -02 2.png"
+            alt="Description of Image 1"
+            class="main-partner-img"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Additional Sections (commented out) -->
+    <!-- Section for Supporters -->
+    <!-- Section for Media Supporters -->
+    <!-- Section for Faculties -->
+    <!-- ======== SwiperJS ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+    <!-- ======== SCROLL REVEAL ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <!-- ======== SliderJS ======= -->
+    <script src="js/slider.js"></script>
+    <!-- ======== IndexJS ======= -->
+    <script src="js/index.js"></script>
+  </div>
+
+  <div id="footer"></div>
+</body>
+</html>
+```
+
+Please note that the translation is based on the context and may need adjustments depending on specific details or requirements.
