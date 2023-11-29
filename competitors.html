@@ -6,8 +6,37 @@
         <title>Хакатон 2023</title>
         <link rel="stylesheet" href="css/competitors.css">
         <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/preloader.css">
+        <script src="jquery/jquery.js"></script>
+        <!-- Preloader Styles -->
+        <link rel="stylesheet" href="css/preloader.css">
+        <!-- ======== Boxicons ======= -->
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+        <!-- ======== Slider Js ======= -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css">
+        <script>
+
+            $(document).ready(function() {
+
+                $(function () {
+                    $("#header").load("header.html", function () {
+                        var path = window.location.pathname;
+                        var page = path.split("/").pop().split(".html")[0];
+                           if(page==="")
+                               page = "index";
+                           $("#" + page).addClass("active");
+                       });
+                    $("#footer").load("footer.html");
+
+            })
+
+            });
+        </script>
     </head>
     <body>
+
+        <div id="header"></div>
+
         <div class="competitors">
             <div class="teams_row">
                 <div class="card">
@@ -66,5 +95,6 @@
                 </div>
             </div>
         </div>
+        <div id="footer"></div>
     </body>
 </html>
