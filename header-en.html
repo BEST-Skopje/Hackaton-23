@@ -20,8 +20,9 @@
           $(".navbar-collapse").collapse("hide");
         });
         var path = window.location.pathname;
-        var page = path.split("/").pop().split(".html")[0];
-        if (page === "") page = "index";
+        var page = path.split("/").pop().split("-en.html")[0];
+        if (page === "") page = "index-en";
+        
         $("#jazik").attr("href", page + "-en.html");
 
         // Add the following lines
@@ -62,22 +63,27 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item mx-3 text-center">
-                            <a id="index" class="nav-link" href="/index.html">Home</a>
+                            <a id="index" class="nav-link" href="/index-en.html">Home</a>
                         </li>
                         <li class="nav-item mx-3 text-center">
-                            <a id="partners" class="nav-link" href="/partners.html">Partners</a>
+                            <a id="partners" class="nav-link" href="/partners-en.html">Partners</a>
                         </li>
                         <li class="nav-item mx-3 text-center">
-                            <a id="details" class="nav-link" href="/details.html">Hackathon</a>
+                            <a id="details" class="nav-link" href="/details-en.html">Hackathon</a>
                         </li>
                         <li class="nav-item mx-3 text-center">
-                            <a id="team" class="nav-link" href="/team.html">Organizers</a>
+                            <a id="team" class="nav-link" href="/team-en.html">Organizers</a>
                         </li>
                         <li class="nav-item mx-3 text-center">
-                            <a id="best" class="nav-link" href="/best.html">BEST</a>
+                            <a id="best" class="nav-link" href="/best-en.html">BEST</a>
                         </li>
                         <li class="nav-item mx-3 text-center">
-                            <a id="faq" class="nav-link" href="/faq.html">FAQ</a>
+                            <a id="faq" class="nav-link" href="/faq-en.html">FAQ</a>
+                        </li>
+                        <li class="nav-item mx-3 text-center">
+                            <a id="jazik" class="nav-link">
+                                <img src="https://www.worldatlas.com/img/flag/mk-flag.jpg" width="30">
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -136,6 +142,11 @@
                         </li>
                         <li class="nav-item mx-3 text-end">
                             <a id="faq" class="nav-link" href="/faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item mx-3 text-center">
+                            <a id="jazik" class="nav-link">
+                                <img src="https://www.worldatlas.com/img/flag/mk-flag.jpg" width="30">
+                            </a>
                         </li>
                     </ul>
                     <ul class="list-inline ">
