@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="images/logos/Hackathon_White.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Хакатон 2023</title>
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css" />
-    <script src="jquery/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <link rel="stylesheet" href="css/preloader.css" />
-
-    <!-- ======== Boxicons ======= -->
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- ======== Slider Js ======= -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
-    />
-
-    <script>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="images/logos/Hackathon_White.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Хакатон 2023</title>
+        <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+        <script src="jquery/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="css/preloader.css">
+        <!-- ======== Boxicons ======= -->
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+        <!-- ======== Slider Js ======= -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css">
+        <script>
       $(document).ready(function () {
         $("#header").load("header.html", function () {
           var path = window.location.pathname;
@@ -47,8 +39,8 @@
           }
         });
       });
-    </script>
-    <style>
+        </script>
+        <style>
       body {
         display: flex;
         flex-direction: column;
@@ -78,189 +70,257 @@
         background-image: url(../images/background-img.svg);
         margin-top: -1vw;
       }
-    </style>
-  </head>
-  <body>
-    <div id="header" class="mb-3"></div>
-
-    <div class="loader">
-      <img src="images\logos\Preloader.png" alt="" />
-    </div>
-
-    <div class="container container-mt-5">
-      <h1 class="text-center mb-4 mt-2">Често Поставувани Прашања</h1>
-      <!-- Card containing the FAQ accordion -->
-      <div class="card">
-        <div class="card-body">
-          <!-- FAQ Accordion -->
-          <div
-            class="accordion"
-            id="faqAccordion"
-            data-bs-parent="#faqAccordion"
-          >
-            <!-- FAQ Item 1 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                >
-                  Што е хакатон?
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingOne"
-              >
-                <div class="accordion-body">
-                  Хакатон е 24 часовен натпревар, на кој учесници со слични
-                  интереси се спојуваат во тим да дадат решение на даден
-                  проблем.
-                </div>
-              </div>
-            </div>
-            <!-- FAQ Item 2 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Кој може да се пријави?
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-              >
-                <div class="accordion-body">
-                  Секој редовен студент на универзитетот св. Кирил и Методиј -
-                  Скопје
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Колку членови треба да има секој тим?
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-              >
-                <div class="accordion-body">
-                  Секој тим треба да биде составен од 3 до 5 натпреварувачи
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading4">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse4"
-                  aria-expanded="false"
-                  aria-controls="collapse4"
-                >
-                  Дали можам да се пријавам ако немам тим?
-                </button>
-              </h2>
-              <div
-                id="collapse4"
-                class="accordion-collapse collapse"
-                aria-labelledby="heading4"
-              >
-                <div class="accordion-body">Да. Ќе бидеш доделен во тим.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading5">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse5"
-                  aria-expanded="false"
-                  aria-controls="collapse5"
-                >
-                  Каде да се пријавам?
-                </button>
-              </h2>
-              <div
-                id="collapse5"
-                class="accordion-collapse collapse"
-                aria-labelledby="heading5"
-              >
-                <div class="accordion-body">
-                  На формата за пријава
-                  <a
-                    href="https://docs.google.com/forms/d/1bKAhCEpd-IW2TmRsI7lUZYR-5htpMix7QMcRQ7sfNoY/edit"
-                    target="_blank"
-                    class="text-decoration-none"
-                    >овде</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading6">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse6"
-                  aria-expanded="false"
-                  aria-controls="collapse6"
-                >
-                  Дали секој член од тимот треба да се пријави?
-                </button>
-              </h2>
-              <div
-                id="collapse6"
-                class="accordion-collapse collapse"
-                aria-labelledby="heading6"
-              >
-                <div class="accordion-body">
-                  Да, при што ќе треба да го наведе името на тимот.
-                </div>
-              </div>
-            </div>
-            <!-- Add more FAQ items as needed -->
-          </div>
-          <!-- End FAQ Accordion -->
+        </style>
+    </head>
+    <body>
+        <div id="header" class="mb-3"></div>
+        <div class="loader">
+            <img src="images\logos\Preloader.png" alt="">
         </div>
-      </div>
-    </div>
-
-    <!-- ======== SwiperJS ======= -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
-    <!-- ======== SCROLL REVEAL ======= -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
-    <!-- ======== SliderJS ======= -->
-    <script src="js/slider.js"></script>
-    <!-- ======== IndexJS ======= -->
-    <script src="js/index.js"></script>
-
-    <div id="footer"></div>
-  </body>
+        <div class="container container-mt-5">
+            <h1 class="text-center mb-4 mt-2">Често Поставувани Прашања</h1>
+            <!-- Card containing the FAQ accordion -->
+            <div class="card">
+                <div class="card-body">
+                    <!-- FAQ Accordion -->
+                    <div class="accordion" id="faqAccordion" data-bs-parent="#faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Што е хакатон?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Хакатон е 12 часовен натпревар од областа на програмирање, 
+                                  на кој учесници со слични интереси се спојуваат во тим 
+                                  да дадат решение на даден проблем.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Кој може да се пријави?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Може да се пријави секој редовен студент од прв или втор циклус студии 
+                                  на универзитетот „Св. Кирил и Методиј“ - Скопје
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Колку членови треба да има секој тим?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Секој тим треба да биде составен од 3 до 5 натпреварувачи
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Дали може да се пријавам ако немам тим?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Да, на учесниците кои не се пријавени во тим ќе им биде доделен тим.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Каде да се пријавам?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Можете да се пријавите на формата за пријавување
+                                    <a target="_blank" href="https://docs.google.com/forms/d/1bKAhCEpd-IW2TmRsI7lUZYR-5htpMix7QMcRQ7sfNoY/edit">
+                                        на овој линк
+                                    </a>
+                                    .
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Дали секој член од тимот треба да се пријави?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Да, при што во формата ќе треба да го наведете името на вашиот тим 
+                                  и имињата на останатите натпреварувачи во тимот.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Кога и каде ќе се одржува БЕСТ Хакатонот?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    На 24.12. во просториите на
+                                    <a target="_blank" href="https://maps.app.goo.gl/XG6Sz1Vye3c4tXzc8">
+                                        ITLabs
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Од каков карактер ќе биде проблемот што ќе се решава?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Проблемот ќе биде од областа на web development. 
+                                    Откако ќе бидете избрани како учесници ќе добиете дополнителни информации.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Дали ќе ни биде обезбедена опрема или треба сами да си обезбедиме?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Треба вие, учесниците, сами да си ја обезбедите потребната опрема за работа.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Кој програмски јазик треба да се користи?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Можете да користите било кои програмски јазици и 
+                                    технологии кои ви се познати од областа на web development.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Дали треба да сум студент на технички факултет?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    Потребно е во секој тим од 3 да има минимум 1, а во секој тим од 5 минимум 2 учесници 
+                                    кои студираат информатички науки или имаат познавање од информатички науки.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more FAQ items as needed -->
+                    </div>
+                    <!-- End FAQ Accordion -->
+                </div>
+            </div>
+        </div>
+        <!-- ======== SwiperJS ======= -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+        <!-- ======== SCROLL REVEAL ======= -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+        <!-- ======== SliderJS ======= -->
+        <script src="js/slider.js"></script>
+        <!-- ======== IndexJS ======= -->
+        <script src="js/index.js"></script>
+        <div id="footer"></div>
+    </body>
 </html>
