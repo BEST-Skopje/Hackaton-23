@@ -112,13 +112,19 @@
                         <p class="card-text mt-0 mb-2">
                             Official partner for Hackathon 2023
                         </p>
-                        <a href="https://www.it-labs.com/" target="_blank">
-                            <button class="apply-now">Website</button>
-                        </a>
+                        <button onclick="redirectToWebsite('https://www.it-labs.com')" class="btn-iv" target="_blank">
+                            Website
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+
+            function redirectToWebsite(url) {
+                window.open(url, '_blank');
+            }
+        </script>
         <!-- To here -->
         <!-- ======== SwiperJS ======= -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>

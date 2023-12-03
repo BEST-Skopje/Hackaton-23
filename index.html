@@ -113,13 +113,19 @@
                         <p class="card-text mt-0 mb-2">
                             Официјален партнер за Хакатон 2023
                         </p>
-                        <a href="https://www.it-labs.com/" target="_blank">
-                            <button class="prijavi-se">Веб страна</button>
-                        </a>
+                        <button onclick="redirectToWebsite('https://www.it-labs.com')" class="btn-iv" target="_blank">
+                            Веб страна
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+
+            function redirectToWebsite(url) {
+                window.open(url, '_blank');
+            }
+        </script>
         <!-- do tuka -->
         <!-- ======== SwiperJS ======= -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
