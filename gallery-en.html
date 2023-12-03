@@ -19,14 +19,14 @@
             $(document).ready(function() {
 
                 $(function () {
-                    $("#header").load("header.html", function () {
+                    $("#header").load("header-en.html", function () {
                         var path = window.location.pathname;
-                        var page = path.split("/").pop().split(".html")[0];
+                        var page = path.split("/").pop().split("-en.html")[0];
                            if(page==="")
-                               page = "index";
+                               page = "index-en";
                            $("#" + page).addClass("active");
                        });
-                    $("#footer").load("footer.html");
+                    $("#footer").load("footer-en.html");
 
             })
 
