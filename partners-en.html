@@ -50,10 +50,9 @@
                             <h1>Official Partner</h1>
                         </div>
                         <p class="image-description p-p">IT Labs</p>
-                        <a href="https://www.it-labs.com" class="btn-iv" target="_blank">
+                        <button onclick="redirectToWebsite('https://www.it-labs.com')" class="btn-iv" target="_blank">
                             Know more
-                        </a
-          >
+                        </button>
                     </div>
                     <div class="main-partner-image">
                         <img src="images/logos/Logo IT Labs R -02 2.png" alt="Description of Image 1" class="main-partner-img">
@@ -159,5 +158,11 @@
             <script src="js/index.js"></script>
         </div>
         <div id="footer"></div>
+        <script>
+
+            function redirectToWebsite(url) {
+                window.open(url, '_blank');
+            }
+        </script>
     </body>
 </html>
