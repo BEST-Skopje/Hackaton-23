@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <link rel="icon" type="image/png" href="images/logos/Hackathon_White.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
         <title>Хакатон 2023</title>
         <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
         <script src="jquery/jquery.js"></script>
@@ -14,64 +16,68 @@
         <!-- ======== Slider Js ======= -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css">
         <script>
-      $(document).ready(function () {
-        $("#header").load("header-en.html", function () {
-          var path = window.location.pathname;
-          var page = path.split("/").pop().split("-en.html")[0];
-          if (page === "") page = "index-en";
-          $("#" + page).addClass("active");
-        });
+            $(document).ready(function () {
+                $("#header").load("header-en.html", function () {
+                    var path = window.location.pathname;
+                    var page = path.split("/").pop().split("-en.html")[0];
+                    if (page === "") page = "index-en";
+                    $("#" + page).addClass("active");
+                });
 
-        $("#footer").load("footer-en.html");
+                $("#footer").load("footer-en.html");
 
-        // Handle accordion click event to close when opened
-        $(".accordion-button").on("click", function () {
-          var parent = $(this).closest(".accordion-item");
-          var isCollapsed = parent.find(".accordion-collapse").hasClass("show");
+                $(".accordion-button").on("click", function () {
+                    var parent = $(this).closest(".accordion-item");
+                    var isCollapsed = parent.find(".accordion-collapse").hasClass("active");
 
-          // If the clicked item is already open, close it
-          if (isCollapsed) {
-            parent.removeClass("active");
-          } else {
-            // Close other items and open the clicked one
-            $(".accordion-item").removeClass("active");
-            parent.addClass("active");
-          }
-        });
-      });
+                    if (isCollapsed) {
+                        parent.find(".accordion-collapse").removeClass("active");
+                    } else {
+                        $(".accordion-collapse").removeClass("active");
+                        parent.find(".accordion-collapse").addClass("active");
+                    }
+                });
+            });
         </script>
+
         <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        margin: 0;
-        padding-bottom: 20px;
-      }
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                margin: 0;
+                padding-bottom: 20px;
+            }
 
-      .container {
-        flex: 1;
-      }
+            .container {
+                flex: 1;
+            }
 
-      .container-mt-5 {
-        margin-bottom: 80px; /* Adjust the margin as needed */
-      }
+            .container-mt-5 {
+                margin-bottom: 80px;
+                /* Adjust the margin as needed */
+            }
 
-      .footer {
-        flex-shrink: 0;
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px;
-      }
+            .footer {
+                flex-shrink: 0;
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+            }
 
-      #pozadina {
-        padding-bottom: 1vw;
-        background-image: url(../images/background-img.svg);
-        margin-top: -1vw;
-      }
+            #pozadina {
+                padding-bottom: 1vw;
+                background-image: url(../images/background-img.svg);
+                margin-top: -1vw;
+            }
+
+            h1 {
+                font-family: "Press Start 2P", sans-serif;
+            }
         </style>
     </head>
+
     <body>
         <div id="header" class="mb-3"></div>
         <div class="loader">
@@ -86,52 +92,37 @@
                     <div class="accordion" id="faqAccordion" data-bs-parent="#faqAccordion">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading1">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapse1"
-                                    aria-expanded="false"
-                                    aria-controls="collapse1"
-                                >
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                                     What is the Hackathon?
                                 </button>
                             </h2>
                             <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1">
                                 <div class="accordion-body">
-                                    A hackathon is a 12-hour competition in the field of programming, where participants with similar interests come together in teams to provide a solution to a given problem.
+                                    A hackathon is a 12-hour competition in the field of programming, where participants
+                                    with similar interests come together in teams to provide a solution to a given
+                                    problem.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading2">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapse2"
-                                    aria-expanded="false"
-                                    aria-controls="collapse2"
-                                >
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                                     Who can apply?
                                 </button>
                             </h2>
                             <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2">
                                 <div class="accordion-body">
-                                    Any regular student from the first or second cycle of studies at the University "St. Cyril and Methodius" - Skopje can apply.
+                                    Any regular student from the first or second cycle of studies at the University "St.
+                                    Cyril and Methodius" - Skopje can apply.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading3">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapse3"
-                                    aria-expanded="false"
-                                    aria-controls="collapse3"
-                                >
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                                     How many members should each team have?
                                 </button>
                             </h2>
@@ -143,14 +134,8 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading4">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapse4"
-                                    aria-expanded="false"
-                                    aria-controls="collapse4"
-                                >
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                                     Can I apply if I don't have a team?
                                 </button>
                             </h2>
@@ -162,21 +147,16 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading5">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapse5"
-                                    aria-expanded="false"
-                                    aria-controls="collapse5"
-                                >
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
                                     Where can I apply?
                                 </button>
                             </h2>
                             <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5">
                                 <div class="accordion-body">
                                     You can apply through the registration form
-                                    <a target="_blank" href="https://docs.google.com/forms/d/1bKAhCEpd-IW2TmRsI7lUZYR-5htpMix7QMcRQ7sfNoY/edit">
+                                    <a target="_blank"
+                                        href="https://docs.google.com/forms/d/1bKAhCEpd-IW2TmRsI7lUZYR-5htpMix7QMcRQ7sfNoY/edit">
                                         at this link
                                     </a>
                                     .
@@ -185,34 +165,22 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading6">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapse6"
-                                    aria-expanded="false"
-                                    aria-controls="collapse6"
-                                >
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
                                     Does every team member need to apply?
                                 </button>
                             </h2>
                             <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6">
                                 <div class="accordion-body">
-                                    Yes, each team member needs to apply individually, 
+                                    Yes, each team member needs to apply individually,
                                     providing the team name and the names of the other team members in the form.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading7">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapse7"
-                                    aria-expanded="false"
-                                    aria-controls="collapse7"
-                                >
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
                                     When and where will the BEST Hackathon take place?
                                 </button>
                             </h2>
@@ -228,34 +196,22 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading8">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapse8"
-                                    aria-expanded="false"
-                                    aria-controls="collapse8"
-                                >
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
                                     What kind of problem will be solved?
                                 </button>
                             </h2>
                             <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8">
                                 <div class="accordion-body">
-                                    The problem will be in the field of web development. 
+                                    The problem will be in the field of web development.
                                     Once selected as participants, you will receive additional information.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading9">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapse9"
-                                    aria-expanded="false"
-                                    aria-controls="collapse9"
-                                >
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
                                     Will equipment be provided, or do we need to bring our own?
                                 </button>
                             </h2>
@@ -267,40 +223,30 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading10">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapse10"
-                                    aria-expanded="false"
-                                    aria-controls="collapse10"
-                                >
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
                                     Which programming language should be used?
                                 </button>
                             </h2>
                             <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10">
                                 <div class="accordion-body">
-                                    You can use any programming languages and technologies familiar to you in the field of web development.
+                                    You can use any programming languages and technologies familiar to you in the field
+                                    of web development.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading11">
-                                <button
-                                    class="accordion-button collapsed"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapse11"
-                                    aria-expanded="false"
-                                    aria-controls="collapse11"
-                                >
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
                                     Do I need to be a student of a technical faculty?
                                 </button>
                             </h2>
                             <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11">
                                 <div class="accordion-body">
-                                    In each team of 3, there must be a minimum of 1 participant studying computer science 
-                                    or having knowledge in computer science, and in each team of 5, 
+                                    In each team of 3, there must be a minimum of 1 participant studying computer
+                                    science
+                                    or having knowledge in computer science, and in each team of 5,
                                     a minimum of 2 participants with such background.
                                 </div>
                             </div>
@@ -318,5 +264,6 @@
             <!-- ======== IndexJS ======= -->
             <script src="js/index.js"></script>
             <div id="footer"></div>
-        </body>
-    </html>
+    </body>
+
+</html>
