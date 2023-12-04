@@ -383,11 +383,28 @@ body {
   padding: 40px 0;
   background: #f9f9f9; /* Change as needed */
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+#partneri-h1{
+  width: 600px;
+  background-color: #fff;
+  padding: 30px;
+  border: 15px solid #53c9e7;
+  border-radius: 15%;
+}
+
+#txt{
+  padding: 30px;
+  font-size: 60px;
+}
+
+
+.font11{
+  font-family: "Press Start 2P", cursive;
 }
 
 .title h1,

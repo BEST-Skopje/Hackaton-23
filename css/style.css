@@ -78,8 +78,7 @@ span + .unit {
   margin-bottom: 2.5vw;
 }
 
-@media (max-width: 567px) {
-}
+
 
 button:hover {
   background-color: #f14472;
