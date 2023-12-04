@@ -16,31 +16,31 @@
         <!-- ======== Slider Js ======= -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css">
         <script>
-            $(document).ready(function () {
-                $("#header").load("header.html", function () {
-                    var path = window.location.pathname;
-                    var page = path.split("/").pop().split(".html")[0];
-                    if (page === "") page = "index";
-                    $("#" + page).addClass("active");
-                });
-
-                $("#footer").load("footer.html");
-
-                // Handle accordion click event to close when opened
-                $(".accordion-button").on("click", function () {
-                    var parent = $(this).closest(".accordion-item");
-                    var isCollapsed = parent.find(".accordion-collapse").hasClass("show");
-
-                    // If the clicked item is already open, close it
-                    if (isCollapsed) {
-                        parent.removeClass("active");
-                    } else {
-                        // Close other items and open the clicked one
-                        $(".accordion-item").removeClass("active");
-                        parent.addClass("active");
-                    }
-                });
+          $(document).ready(function() {
+            $("#header").load("header.html", function() {
+              var path = window.location.pathname;
+              var page = path
+                .split("/")
+                .pop()
+                .split(".html")[0];
+              if (page === "") page = "index";
+              $("#" + page).addClass("active");
             });
+    
+            $("#footer").load("footer.html");
+    
+            $(".accordion-button").on("click", function() {
+              var parent = $(this).closest(".accordion-item");
+              var isCollapsed = parent.find(".accordion-collapse").hasClass("show");
+    
+              if (isCollapsed) {
+                parent.find(".accordion-collapse").removeClass("show");
+              } else {
+                $(".accordion-collapse").removeClass("show");
+                parent.find(".accordion-collapse").addClass("show");
+              }
+            });
+          });
         </script>
         <style>
             body {
