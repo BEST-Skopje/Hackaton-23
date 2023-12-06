@@ -148,7 +148,8 @@ button:hover {
 
 #first {
   background-image: url(../images/poaz6.svg);
-  margin-top: -1.5vw;
+  background-size: cover;
+  
 }
 
 #black_dino {
