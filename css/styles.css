@@ -1,5 +1,6 @@
 /* =========== Fonts ============ */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 /* =========== Browser Reset ============ */
 :root {
   /* Color Variables */
@@ -390,21 +391,22 @@ body {
 }
 
 #partneri-h1{
-  width: 600px;
+  width: 61vh;
   background-color: #fff;
-  padding: 30px;
+  padding: 2vh;
   border: 15px solid #53c9e7;
   border-radius: 15%;
 }
 
 #txt{
   padding: 30px;
-  font-size: 60px;
+  font-size: 6vh;
+  text-align: center;
 }
 
 
 .font11{
-  font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", sans-serif;
 }
 
 .title h1,
