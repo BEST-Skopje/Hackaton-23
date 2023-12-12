@@ -61,16 +61,15 @@
                 margin: 0;
                 padding-bottom: 20px;
             }
-
+            
             .container {
                 flex: 1;
             }
-
+            
             .container-mt-5 {
                 margin-bottom: 80px;
-                /* Adjust the margin as needed */
             }
-
+            
             .footer {
                 flex-shrink: 0;
                 background-color: #333;
@@ -78,16 +77,45 @@
                 text-align: center;
                 padding: 10px;
             }
-
+            
             #pozadina {
                 padding-bottom: 1vw;
                 background-image: url(../images/background-img.svg);
                 margin-top: -1vw;
             }
-
-            h1{
-
+            
+            h1 {
                 font-family: "Press Start 2P", sans-serif;
+            }
+            
+            /* Responsive styles */
+            @media only screen and (max-width: 768px) {
+                .faq {
+                    flex: 1; /* Adjust the width of the FAQ list on smaller screens */
+                }
+            
+                .faq .question {
+                    font-size: 18px; /* Adjust the font size of questions on smaller screens */
+                }
+            
+                .faq .answer {
+                    width: 100%; /* Make the answer take up the full width on smaller screens */
+                }
+            
+                #faq-content {
+                    flex-direction: column; /* Stack the FAQ list on top of the right content on smaller screens */
+                    align-items: center;
+                }
+            
+                #faq-right {
+                    margin-top: 20px; /* Add some space between the FAQ list and the right content on smaller screens */
+                    text-align: center;
+                }
+            
+                #faq-right img {
+                    width: 100%; /* Make the image take up the full width on smaller screens */
+                    padding-bottom: 20px;
+                }
             }
         </style>
         <style>
@@ -220,146 +248,145 @@
         <div class="loader">
             <img src="images\logos\Preloader.png" alt="">
         </div>
-        <div class="container container-mt-5">
+        <div class="container container-mt-5 ">
             <h1 class="text-center mb-4 mt-2">Често Поставувани Прашања</h1>
             <!-- Card containing the FAQ accordion -->
-            <div class="card mt-5">
+            <div class="card mt-5 ">
                 <div class="card-body">
                     <!-- FAQ Accordion -->
-                    <div class="section" id="faqq">
-                        <div id="faq-content">
-                            <ul class="faq">
-                                <li>
-                                    <h3 class="question">
-                                        <i class="fas fa-plus-circle expand-icon"></i>
-                                        Што е хакатон?
-                                    </h3>
-                                    <div class="answer">
-                                        Хакатон е 12 часовен натпревар од областа на програмирање, на
+                    <div id="faq-content">
+                        <ul class="faq">
+                            <li>
+                                <h3 class="question">
+                                    <i class="fas fa-plus-circle expand-icon"></i>
+                                    Што е хакатон?
+                                </h3>
+                                <div class="answer">
+                                    Хакатон е 12 часовен натпревар од областа на програмирање, на
                                         кој учесници со слични интереси се спојуваат во тим да дадат
                                         решение на даден проблем.
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="question">
-                                        <i class="fas fa-plus-circle expand-icon"></i>
-                                        Кој може да се пријави?
-                                    </h3>
-                                    <div class="answer">
-                                        Може да се пријави секој редовен студент од прв или втор
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="question">
+                                    <i class="fas fa-plus-circle expand-icon"></i>
+                                    Кој може да се пријави?
+                                </h3>
+                                <div class="answer">
+                                    Може да се пријави секој редовен студент од прв или втор
                                         циклус студии на универзитетот „Св. Кирил и Методиј“ - Скопје
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="question">
-                                        <i class="fas fa-plus-circle expand-icon"></i>
-                                        Колку членови треба да има секој тим?
-                                    </h3>
-                                    <div class="answer">
-                                        Секој тим треба да биде составен од 3 до 5 натпреварувачи
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="question">
-                                        <i class="fas fa-plus-circle expand-icon"></i>
-                                        Дали може да се пријавам ако немам тим?
-                                    </h3>
-                                    <div class="answer">
-                                        Да, на учесниците кои не се пријавени во тим ќе им биде
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="question">
+                                    <i class="fas fa-plus-circle expand-icon"></i>
+                                    Колку членови треба да има секој тим?
+                                </h3>
+                                <div class="answer">
+                                    Секој тим треба да биде составен од 3 до 5 натпреварувачи
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="question">
+                                    <i class="fas fa-plus-circle expand-icon"></i>
+                                    Дали може да се пријавам ако немам тим?
+                                </h3>
+                                <div class="answer">
+                                    Да, на учесниците кои не се пријавени во тим ќе им биде
                                         доделен тим.
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="question">
-                                        <i class="fas fa-plus-circle expand-icon"></i>
-                                        Каде да се пријавам?
-                                    </h3>
-                                    <div class="answer">
-                                        Можете да се пријавите на формата за пријавување
-                                        <a target="_blank" href="https://docs.google.com/forms/d/1bKAhCEpd-IW2TmRsI7lUZYR-5htpMix7QMcRQ7sfNoY/edit">
-                                            на овој линк
-                                        </a>
-                                        .
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="question">
-                                        <i class="fas fa-plus-circle expand-icon"></i>
-                                        Дали секој член од тимот треба да се пријави?
-                                    </h3>
-                                    <div class="answer">
-                                        Да, при што во формата ќе треба да го наведете името на вашиот
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="question">
+                                    <i class="fas fa-plus-circle expand-icon"></i>
+                                    Каде да се пријавам?
+                                </h3>
+                                <div class="answer">
+                                    Можете да се пријавите на формата за пријавување
+                                    <a target="_blank" href="https://docs.google.com/forms/d/1bKAhCEpd-IW2TmRsI7lUZYR-5htpMix7QMcRQ7sfNoY/edit">
+                                        на овој линк
+                                    </a>
+                                    .
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="question">
+                                    <i class="fas fa-plus-circle expand-icon"></i>
+                                    Дали секој член од тимот треба да се пријави?
+                                </h3>
+                                <div class="answer">
+                                    Да, при што во формата ќе треба да го наведете името на вашиот
                                         тим и имињата на останатите натпреварувачи во тимот.
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="question">
-                                        <i class="fas fa-plus-circle expand-icon"></i>
-                                        Кога и каде ќе се одржува БЕСТ Хакатонот?
-                                    </h3>
-                                    <div class="answer">
-                                        На 24.12. во просториите на
-                                        <a target="_blank" href="https://maps.app.goo.gl/XG6Sz1Vye3c4tXzc8">
-                                            ITLabs
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="question">
-                                        <i class="fas fa-plus-circle expand-icon"></i>
-                                        Од каков карактер ќе биде проблемот што ќе се решава?
-                                    </h3>
-                                    <div class="answer">
-                                        Проблемот ќе биде од областа на web development. Откако ќе
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="question">
+                                    <i class="fas fa-plus-circle expand-icon"></i>
+                                    Кога и каде ќе се одржува БЕСТ Хакатонот?
+                                </h3>
+                                <div class="answer">
+                                    На 24.12. во просториите на
+                                    <a target="_blank" href="https://maps.app.goo.gl/XG6Sz1Vye3c4tXzc8">
+                                        ITLabs
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="question">
+                                    <i class="fas fa-plus-circle expand-icon"></i>
+                                    Од каков карактер ќе биде проблемот што ќе се решава?
+                                </h3>
+                                <div class="answer">
+                                    Проблемот ќе биде од областа на web development. Откако ќе
                                         бидете избрани како учесници ќе добиете дополнителни
                                         информации.
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="question">
-                                        <i class="fas fa-plus-circle expand-icon"></i>
-                                        Дали ќе ни биде обезбедена опрема или треба сами да си
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="question">
+                                    <i class="fas fa-plus-circle expand-icon"></i>
+                                    Дали ќе ни биде обезбедена опрема или треба сами да си
                                         обезбедиме?
-                                    </h3>
-                                    <div class="answer">
-                                        Треба вие, учесниците, сами да си ја обезбедите потребната
+                                </h3>
+                                <div class="answer">
+                                    Треба вие, учесниците, сами да си ја обезбедите потребната
                                         опрема за работа.
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="question">
-                                        <i class="fas fa-plus-circle expand-icon"></i>
-                                        Кој програмски јазик треба да се користи?
-                                    </h3>
-                                    <div class="answer">
-                                        Можете да користите било кои програмски јазици и технологии
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="question">
+                                    <i class="fas fa-plus-circle expand-icon"></i>
+                                    Кој програмски јазик треба да се користи?
+                                </h3>
+                                <div class="answer">
+                                    Можете да користите било кои програмски јазици и технологии
                                         кои ви се познати од областа на web development.
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="question">
-                                        <i class="fas fa-plus-circle expand-icon"></i>
-                                        Дали треба да сум студент на технички факултет?
-                                    </h3>
-                                    <div class="answer">
-                                        Потребно е во секој тим од 3 да има минимум 1, а во секој тим
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="question">
+                                    <i class="fas fa-plus-circle expand-icon"></i>
+                                    Дали треба да сум студент на технички факултет?
+                                </h3>
+                                <div class="answer">
+                                    Потребно е во секој тим од 3 да има минимум 1, а во секој тим
                                         од 5 минимум 2 учесници кои студираат информатички науки или
                                         имаат познавање од информатички науки.
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- ======== SwiperJS ======= -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
-            <!-- ======== SCROLL REVEAL ======= -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
-            <!-- ======== SliderJS ======= -->
-            <script src="js/slider.js"></script>
-            <!-- ======== IndexJS ======= -->
-            <script src="js/index.js"></script>
-            <div id="footer"></div>
-        </body>
-    </html>
+        </div>
+        <!-- ======== SwiperJS ======= -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+        <!-- ======== SCROLL REVEAL ======= -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+        <!-- ======== SliderJS ======= -->
+        <script src="js/slider.js"></script>
+        <!-- ======== IndexJS ======= -->
+        <script src="js/index.js"></script>
+        <div id="footer"></div>
+    </body>
+</html>
