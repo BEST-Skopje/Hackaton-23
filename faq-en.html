@@ -28,7 +28,7 @@
         <script src="https://use.fontawesome.com/9f7b7f8456.js"></script>
         <script>
           $(document).ready(function() {
-            $("#header").load("header.html", function() {
+            $("#header").load("header-en.html", function() {
               var path = window.location.pathname;
               var page = path
                 .split("/")
@@ -38,7 +38,7 @@
               $("#" + page).addClass("active");
             });
     
-            $("#footer").load("footer.html");
+            $("#footer").load("footer-en.html");
     
             $(".accordion-button").on("click", function() {
               var parent = $(this).closest(".accordion-item");
